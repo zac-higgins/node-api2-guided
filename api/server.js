@@ -4,8 +4,6 @@ const hubsRouter = require('../hubs/hubs-router');
 
 const server = express();
 
-server.use(express.json());
-
 server.get('/', (req, res) => {
   res.send(`
     <h2>Lambda Hubs API</h>
